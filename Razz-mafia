@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RaZz Mafia™ | Official Telegram Channel</title>
+
+<meta name="description"
+content="Join RaZz Mafia™ Official Telegram Channel for exclusive updates, community content and the latest announcements.">
+
+<meta name="theme-color" content="#080512">
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#06060d;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+
+/* =========================
+   ANIMATED BACKGROUND
+========================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+
+    background:
+    radial-gradient(circle at 20% 20%,rgba(111,66,193,.22),transparent 30%),
+    radial-gradient(circle at 80% 30%,rgba(0,136,204,.18),transparent 28%),
+    radial-gradient(circle at 50% 90%,rgba(255,55,120,.12),transparent 35%);
+
+    z-index:-3;
+
+    animation:bgMove 12s infinite alternate ease-in-out;
+}
+
+@keyframes bgMove{
+
+    0%{
+        transform:scale(1);
+    }
+
+    100%{
+        transform:scale(1.12);
+    }
+
+}
+
+
+/* =========================
+   FLOATING PARTICLES
+========================= */
+
+.particles span{
+
+    position:fixed;
+
+    width:4px;
+    height:4px;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    opacity:.5;
+
+    animation:particleFloat linear infinite;
+
+    z-index:-1;
+
+}
+
+.particles span:nth-child(1){
+    left:10%;
+    top:90%;
+    animation-duration:14s;
+}
+
+.particles span:nth-child(2){
+    left:25%;
+    top:80%;
+    animation-duration:18s;
+}
+
+.particles span:nth-child(3){
+    left:50%;
+    top:95%;
+    animation-duration:12s;
+}
+
+.particles span:nth-child(4){
+    left:70%;
+    top:85%;
+    animation-duration:16s;
+}
+
+.particles span:nth-child(5){
+    left:90%;
+    top:90%;
+    animation-duration:20s;
+}
+
+.particles span:nth-child(6){
+    left:35%;
+    top:70%;
+    animation-duration:15s;
+}
+
+.particles span:nth-child(7){
+    left:80%;
+    top:60%;
+    animation-duration:13s;
+}
+
+.particles span:nth-child(8){
+    left:5%;
+    top:60%;
+    animation-duration:19s;
+}
+
+@keyframes particleFloat{
+
+    from{
+        transform:translateY(0);
+        opacity:0;
+    }
+
+    20%{
+        opacity:.7;
+    }
+
+    to{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:80px 20px 60px;
+
+    position:relative;
+
+}
+
+.hero-content{
+
+    max-width:900px;
+
+    animation:heroAppear 1.2s ease;
+
+}
+
+@keyframes heroAppear{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+
+    width:160px;
+    height:160px;
+
+    margin:0 auto 35px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+
+    background:
+
+    radial-gradient(circle at 30% 30%,#1c1c2b,#050509);
+
+    border:2px solid rgba(150,100,255,.6);
+
+    box-shadow:
+
+    0 0 30px rgba(120,80,255,.5),
+    0 0 80px rgba(0,136,204,.25);
+
+    animation:
+
+    logoFloat 4s infinite ease-in-out,
+    logoGlow 3s infinite alternate;
+
+}
+
+@keyframes logoFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-16px);
+    }
+
+}
+
+@keyframes logoGlow{
+
+    from{
+
+        box-shadow:
+        0 0 30px rgba(120,80,255,.4),
+        0 0 70px rgba(0,136,204,.2);
+
+    }
+
+    to{
+
+        box-shadow:
+        0 0 55px rgba(120,80,255,.8),
+        0 0 120px rgba(0,136,204,.5);
+
+    }
+
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.hero h1{
+
+    font-size:clamp(42px,9vw,90px);
+
+    font-style:italic;
+
+    letter-spacing:3px;
+
+    margin-bottom:20px;
+
+    line-height:1;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #ffffff,
+    #c8b6ff,
+    #9c7cff,
+    #ffffff
+    );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    animation:textGlow 5s infinite linear;
+
+}
+
+@keyframes textGlow{
+
+    0%{
+        background-position:0%;
+    }
+
+    100%{
+        background-position:300%;
+    }
+
+}
+
+
+.hero p{
+
+    font-size:20px;
+
+    color:#b8b8c7;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+
+/* =========================
+   GLOW LINE
+========================= */
+
+.glow-line{
+
+    width:130px;
+
+    height:5px;
+
+    border-radius:20px;
+
+    margin:35px auto;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #7c3aed,
+    #ff4d8d,
+    #38bdf8
+    );
+
+    box-shadow:
+
+    0 0 15px #7c3aed,
+    0 0 30px rgba(255,77,141,.5);
+
+    animation:linePulse 2s infinite alternate;
+
+}
+
+@keyframes linePulse{
+
+    from{
+        transform:scaleX(.8);
+    }
+
+    to{
+        transform:scaleX(1.25);
+    }
+
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.telegram-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    padding:20px 45px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    font-size:19px;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #5b21b6,
+    #7c3aed,
+    #2563eb
+    );
+
+    border:1px solid rgba(255,255,255,.18);
+
+    box-shadow:
+
+    0 0 20px rgba(124,58,237,.4),
+    0 15px 45px rgba(0,0,0,.35);
+
+    transition:.35s;
+
+    animation:buttonPulse 2.5s infinite;
+
+}
+
+.telegram-btn:hover{
+
+    transform:
+
+    translateY(-7px)
+    scale(1.04);
+
+    box-shadow:
+
+    0 0 35px rgba(124,58,237,.9),
+    0 20px 55px rgba(0,0,0,.5);
+
+}
+
+@keyframes buttonPulse{
+
+    0%,100%{
+
+        box-shadow:
+
+        0 0 20px rgba(124,58,237,.4),
+        0 15px 45px rgba(0,0,0,.35);
+
+    }
+
+    50%{
+
+        box-shadow:
+
+        0 0 40px rgba(0,136,204,.6),
+        0 15px 55px rgba(0,0,0,.5);
+
+    }
+
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:100px 20px;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:#9ca3af;
+
+    font-size:17px;
+
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    padding:35px 25px;
+
+    border-radius:24px;
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(30,30,50,.9),
+    rgba(10,10,20,.8)
+    );
+
+    border:
+
+    1px solid
+    rgba(150,100,255,.18);
+
+    backdrop-filter:
+
+    blur(15px);
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+    height:150px;
+
+    border-radius:50%;
+
+    background:#7c3aed;
+
+    filter:blur(90px);
+
+    opacity:.15;
+
+    top:-80px;
+
+    right:-80px;
+
+}
+
+.card:hover{
+
+    transform:
+
+    translateY(-12px);
+
+    border-color:
+
+    rgba(150,100,255,.7);
+
+    box-shadow:
+
+    0 20px 50px
+    rgba(0,0,0,.4);
+
+}
+
+.icon{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+}
+
+.card p{
+
+    color:#a8a8b8;
+
+    line-height:1.7;
+
+}
+
+
+/* =========================
+   PREMIUM JOIN BOX
+========================= */
+
+.join-box{
+
+    max-width:950px;
+
+    margin:60px auto 0;
+
+    padding:60px 30px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    rgba(70,40,120,.45),
+    rgba(10,15,35,.9)
+    );
+
+    border:
+
+    1px solid
+    rgba(150,100,255,.4);
+
+    box-shadow:
+
+    0 25px 70px
+    rgba(0,0,0,.35);
+
+}
+
+.join-box h2{
+
+    font-size:clamp(30px,5vw,50px);
+
+    margin-bottom:20px;
+
+}
+
+.join-box p{
+
+    color:#b8b8c7;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:50px;
+
+    padding:80px 20px;
+
+}
+
+.stat{
+
+    min-width:160px;
+
+    text-align:center;
+
+}
+
+.stat h3{
+
+    font-size:42px;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #fbbf24,
+    #fb7185,
+    #a78bfa
+    );
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+}
+
+.stat p{
+
+    margin-top:8px;
+
+    color:#8f8f9d;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+}
+
+
+/* =========================
+   FINAL CTA
+========================= */
+
+.final-cta{
+
+    padding:100px 20px;
+
+    text-align:center;
+
+}
+
+.final-cta h2{
+
+    font-size:clamp(32px,6vw,60px);
+
+    margin-bottom:20px;
+
+}
+
+.final-cta p{
+
+    color:#a8a8b8;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    border-top:
+
+    1px solid
+    rgba(255,255,255,.06);
+
+    color:#777786;
+
+}
+
+footer strong{
+
+    color:#b9a8ff;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .hero{
+
+        padding-top:60px;
+
+    }
+
+    .logo{
+
+        width:130px;
+        height:130px;
+
+        font-size:27px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .telegram-btn{
+
+        width:100%;
+
+        padding:19px 20px;
+
+        font-size:17px;
+
+    }
+
+    .section{
+
+        padding:70px 18px;
+
+    }
+
+    .section-title h2{
+
+        font-size:30px;
+
+    }
+
+    .stats{
+
+        gap:35px;
+
+    }
+
+    .stat h3{
+
+        font-size:35px;
+
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- PARTICLES -->
+
+<div class="particles">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+
+<div class="logo">
+
+RAZZ
+
+</div>
+
+
+<h1>
+
+RaZz Mafia™
+
+</h1>
+
+
+<p>
+
+Welcome to the official RaZz Mafia™ Telegram Channel.
+Join our growing community and get exclusive updates,
+important announcements and premium content directly on Telegram.
+
+</p>
+
+
+<div class="glow-line"></div>
+
+
+<a
+
+class="telegram-btn"
+
+href="https://t.me/+QAdxrcZgwtM1Mjg1"
+
+target="_blank"
+
+>
+
+✈ Join Telegram Channel
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+<!-- FEATURES -->
+
+<section class="section">
+
+
+<div class="section-title">
+
+<h2>
+
+Why Join RaZz Mafia™?
+
+</h2>
+
+<p>
+
+Stay connected with our growing community.
+
+</p>
+
+</div>
+
+
+
+<div class="features">
+
+
+<div class="card">
+
+<div class="icon">
+
+🔥
+
+</div>
+
+<h3>
+
+Latest Updates
+
+</h3>
+
+<p>
+
+Get the latest announcements and important updates directly on Telegram.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+
+⚡
+
+</div>
+
+<h3>
+
+Instant Updates
+
+</h3>
+
+<p>
+
+Stay connected and never miss new posts, announcements and content.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+
+🎯
+
+</div>
+
+<h3>
+
+Exclusive Content
+
+</h3>
+
+<p>
+
+Enjoy exclusive community content shared with RaZz Mafia™ members.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+
+🌍
+
+</div>
+
+<h3>
+
+Growing Community
+
+</h3>
+
+<p>
+
+Become part of a growing Telegram community and stay connected.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<!-- PREMIUM BOX -->
+
+<div class="join-box">
+
+
+<h2>
+
+Join The Community 🚀
+
+</h2>
+
+
+<p>
+
+Become part of RaZz Mafia™ and stay connected
+with the latest updates and exclusive Telegram content.
+
+</p>
+
+
+<a
+
+class="telegram-btn"
+
+href="https://t.me/+QAdxrcZgwtM1Mjg1"
+
+target="_blank"
+
+>
+
+✈ Join Now
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- STATS -->
+
+<section class="stats">
+
+
+<div class="stat">
+
+<h3>
+
+24/7
+
+</h3>
+
+<p>
+
+ACTIVE
+
+</p>
+
+</div>
+
+
+
+<div class="stat">
+
+<h3>
+
+FAST
+
+</h3>
+
+<p>
+
+UPDATES
+
+</p>
+
+</div>
+
+
+
+<div class="stat">
+
+<h3>
+
+100%
+
+</h3>
+
+<p>
+
+COMMUNITY
+
+</p>
+
+</div>
+
+
+</section>
+
+
+
+<!-- FINAL CTA -->
+
+<section class="final-cta">
+
+
+<h2>
+
+Ready To Join? 🔥
+
+</h2>
+
+
+<p>
+
+Click below and become part of RaZz Mafia™.
+
+</p>
+
+
+<a
+
+class="telegram-btn"
+
+href="https://t.me/+QAdxrcZgwtM1Mjg1"
+
+target="_blank"
+
+>
+
+🚀 Join RaZz Mafia™ On Telegram
+
+</a>
+
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 <strong>RaZz Mafia™</strong>
+
+<br><br>
+
+Official Telegram Community
+
+</footer>
+
+
+</body>
+
+</html>
